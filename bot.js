@@ -5,7 +5,7 @@
 var nickname = param(1)
 var content = param(2)
 var rename = function(content) {
-    return content.replace("小爱", nickname).replace("菲菲", nickname).replace("{br}", "\n")
+    return content.replace("豆子", nickname).replace("建勋", nickname).replace("{br}", "\n")
 }
 var data = request({
     "url": "http://api.qingyunke.com/api.php?key=free&appid=0&msg=" + content,
