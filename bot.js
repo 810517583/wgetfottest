@@ -8,7 +8,7 @@ var rename = function(content) {
     return content.replace("小爱", nickname).replace("菲菲", nickname).replace("{br}", "\n")
 }
 var data = request({
-    "url": "http://www.tuling123.com/v1/kb/match?apikey=6a5281cd9878461ead367fca74c30ae7&match=60&msg=" + content,
+    "url": "http://api.qingyunke.com/api.php?key=free&appid=0&msg=" + content,
     "dataType": "json"
 })
 if (data && data.content) {
